@@ -60,4 +60,3 @@ Assets and liabilities proof should be paired together using the `id` key. An as
 proof must have the same `id` as its matching liabilities proof. This
 allows a shared wallet who handles multiple currencies to have multiple
 solvency proofs.
-
