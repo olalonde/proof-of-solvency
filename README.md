@@ -69,7 +69,7 @@ proof must have the same `id` as its matching liabilities proof. This
 allows a shared wallet who handles multiple currencies to have multiple
 solvency proofs.
 
-## Sites that implement blind-liability-proof
+## Sites that implement this scheme
 
 Send a pull request if you would like your site listed here.
 
