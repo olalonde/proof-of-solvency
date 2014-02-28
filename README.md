@@ -20,7 +20,7 @@ Embedded:
 
 ```json
 {
-  "id": "MtGox.com BTC liabilities"
+  "id": "MtGox.com BTC liabilities",
   "partial_tree": { ... }
 }
 ```
@@ -39,7 +39,7 @@ Embedded:
 
 ```json
 {
-  "id": "MtGox.com BTC assets"
+  "id": "MtGox.com BTC assets",
   "signatures": [
     { "address": "", "signature": "" }
   ],
