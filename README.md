@@ -1,9 +1,11 @@
-WORK IN PROGRESS. See [olalonde/blind-liability-proof](https://github.com/olalonde/blind-liability-proof)
-
-# blind-solvency-proof
+# Blind Solvency Proof scheme
 
 This is a scheme that describes how Bitcoin shared wallet operators can prove
 they are solvent in a way that protects the privacy of its users.
+
+Beer fund: **1ECyyu39RtDNAuk3HRCRWwD4syBF2ZGzdx**
+
+![extension screenshot](https://raw.github.com/olalonde/solvency-verifier-extension/master/docs/screenshot.png)
 
 ## Liabilites proof
 
@@ -64,3 +66,8 @@ Assets and liabilities proof should be paired together using the `id` key. An as
 proof must have the same `id` as its matching liabilities proof. This
 allows a shared wallet who handles multiple currencies to have multiple
 solvency proofs.
+
+## Sites that implement blind-liability-proof
+
+Send a pull request if you would like your site listed here.
+
