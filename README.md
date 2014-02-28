@@ -2,6 +2,8 @@
 
 This is a scheme that describes how Bitcoin shared wallet operators can prove
 they are solvent in a way that protects the privacy of its users.
+Inspired from gmaxwell's
+["prove-how-(non)-fractional-your-Bitcoin-reserves-are scheme"](https://iwilcox.me.uk/2014/nofrac-orig).
 
 Beer fund: **1ECyyu39RtDNAuk3HRCRWwD4syBF2ZGzdx**
 
