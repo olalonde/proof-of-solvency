@@ -5,20 +5,20 @@ WORK IN PROGRESS. See [olalonde/blind-liability-proof](https://github.com/olalon
 This is a scheme that describes how Bitcoin shared wallet operators can prove
 they are solvent in a way that protects the privacy of its users.
 
-## Liabilities proof
+## Liabilites proof
 
-The liability proof is done using the scheme described at
+The liabilities proof is done using the scheme described at
 [olalonde/blind-liability-proof](https://github.com/olalonde/blind-liability-proof).
 
 Embedded:
 
-```
+```html
 <meta name="x-liabilities-proof" data="/account/btc-partial-tree.json">
 ```
 
-/acccount/btc-partial-tree.json (different for each user)
+`/acccount/btc-partial-tree.json` (different for each user)
 
-```
+```json
 {
   "id": "MtGox.com BTC liabilities"
   "partial_tree": { ... }
@@ -27,30 +27,34 @@ Embedded:
 
 ## Assets proof
 
+The assets proof is done using the scheme described at [olalonde/bitcoin-asset-proof](https://github.com/olalonde/bitcoin-asset-proof).
+
 Embedded:
 
-```
+```html
 <meta name='x-assets-proof' data='/btc-assets.json'>
 ```
 
-/btc-assets.json
-```
+`/btc-assets.json`
+
+```json
 {
   "id": "MtGox.com BTC assets"
-  signatures: [
-    { address: "", signature: "" }
+  "signatures": [
+    { "address": "", "signature": "" }
   ],
-  type: "BTC" (optional - defaults to bitcoin)
+  "type": "BTC" (optional - defaults to bitcoin)
 }
 ```
 
 ## Solvency proof
 
-[Blind Solvency Verifier](https://github.com/olalonde/blind-solvency-verifier-extension) Chrome Extension
+[Solvency Verifier](https://github.com/olalonde/solvency-verifier-extension) Chrome Extension
 
 The proof that a site is solvent can be done by adding up all amounts
 controlled by addresses listed in the assets proof and deducting this
 amount from the root value in the liabilities proof.
+
 
 ```
 function is_solvent() { return (assets >= liabilities) }
