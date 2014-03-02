@@ -18,6 +18,7 @@ Embedded:
 
 ```html
 <meta name="x-liabilities-proof" data="/account/btc-partial-tree.json">
+<meta name="x-liabilities-proof-root" data="/btc-root.json">
 ```
 
 `/acccount/btc-partial-tree.json` (different for each user)
@@ -26,6 +27,18 @@ Embedded:
 {
   "id": "MtGox.com BTC liabilities",
   "partial_tree": { ... }
+}
+```
+
+`/btc-root.json`
+
+```json
+{ 
+  "id": "MtGox.com BTC liabilities",
+  "root": {
+    "value": 37618,
+    "hash": "2evVTMS8wbF2p5aq1qFETanO24BsnP/eshJxxPHJcug="
+  }
 }
 ```
 
