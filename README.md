@@ -16,7 +16,7 @@ The liabilities proof is done using the scheme described at
 
 Embedded:
 
-PS: The x-liabilities-proof-root **must** be available on the index page (domain.com/) of the domain name and should be retrievable by non logged in visitors.
+PS: The `x-liabilities-proof-root` **must** be available on the index page (domain.com/) of the domain name and should be retrievable by non logged in visitors.
 
 ```html
 <meta name="x-liabilities-proof" data="/account/btc-partial-tree.json">
