@@ -1,0 +1,35 @@
+{
+  "name": "bsproof",
+  "version": "0.0.1",
+  "description": "Blind solvency proof",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./cli.js verify localhost --assets \"/data/btc/asset.json\" --liabilities \"/data/btc/partial_trees/bob.json\""
+  },
+  "bin": {
+    "bsproof": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/olalonde/blind-solvency-proof.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "solvency",
+    "proof"
+  ],
+  "author": "Olivier Lalonde <olalonde@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/olalonde/blind-solvency-proof/issues"
+  },
+  "dependencies": {
+    "debug": "~0.7.4",
+    "commander": "~2.1.0",
+    "request": "~2.34.0",
+    "baproof": "0.0.7",
+    "blproof": "0.0.13",
+    "async": "~0.2.10"
+  }
+}
