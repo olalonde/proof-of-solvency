@@ -7220,13 +7220,15 @@ module.exports=_dereq_(3)
 var debug = _dereq_('debug')('bsproof'),
   async = _dereq_('async'),
   path = _dereq_('path'),
+  // @TODO: only use browser-request when doing browserify command. use
+  // request otherwise
   request = _dereq_('browser-request'),
   baproof = _dereq_('baproof'),
   blproof = _dereq_('blproof');
 
 // @TODO: consider TIMESTAMPS!
 
-var SOLVENCY_SERVER = process.env.SOLVENCY_SERVER || 'http://localhost:3000/domain/';
+var SOLVENCY_SERVER = process.env.SOLVENCY_SERVER || 'http://solvency.syskall.com/domain/';
 
 function verify (domain, asset_paths, liability_paths, cb) {
   console.log('Solvency proof verification started...');
