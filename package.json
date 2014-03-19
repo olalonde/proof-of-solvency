@@ -4,7 +4,8 @@
   "description": "Blind solvency proof",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./cli.js verify localhost --assets \"/data/btc/asset.json\" --liabilities \"/data/btc/partial_trees/bob.json\""
+    "test": "./cli.js verify localhost --assets \"/data/btc/asset.json\" --liabilities \"/data/btc/partial_trees/bob.json\"",
+    "build": "browserify lib/index.js --standalone bsproof > ./build/bsproof.js"
   },
   "bin": {
     "bsproof": "./cli.js"
@@ -30,6 +31,7 @@
     "request": "~2.34.0",
     "baproof": "0.0.7",
     "blproof": "0.0.13",
-    "async": "~0.2.10"
+    "async": "~0.2.10",
+    "browser-request": "~0.3.1"
   }
 }
