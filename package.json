@@ -1,14 +1,14 @@
 {
-  "name": "bsproof",
+  "name": "sproof",
   "version": "0.0.1",
-  "description": "Blind solvency proof",
+  "description": "Proof of Solvency (PoS) library and CLI",
   "main": "lib/index.js",
   "scripts": {
     "test": "./cli.js verify localhost --assets \"/data/btc/asset.json\" --liabilities \"/data/btc/partial_trees/bob.json\"",
-    "build": "browserify lib/index.js --standalone bsproof > ./build/bsproof.js"
+    "build": "browserify lib/index.js --standalone sproof > ./build/sproof.js"
   },
   "bin": {
-    "bsproof": "./cli.js"
+    "sproof": "./cli.js"
   },
   "repository": {
     "type": "git",
