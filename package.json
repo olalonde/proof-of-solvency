@@ -29,8 +29,8 @@
     "debug": "~0.7.4",
     "commander": "~2.1.0",
     "request": "~2.34.0",
-    "baproof": "0.0.7",
-    "blproof": "0.0.13",
+    "aproof": "0.0.7",
+    "lproof": "0.0.13",
     "async": "~0.2.10",
     "browser-request": "~0.3.1"
   }
