@@ -5,7 +5,8 @@
 
 Proof of Solvency (PoS) is a scheme designed to let users verify the
 solvency of online websites which accept Bitcoin (or other similar
-currency) deposits (e.g. exchange websites, online wallets, gambling websites, etc.).
+currency) deposits (e.g. exchange websites, online wallets, gambling websites, etc.)
+in a way that doesn't compromise the privacy of users.
 
 This scheme is based on the [Proof Of Liabilities][PoL] and [Proof of Assets][PoA] schemes.
 
