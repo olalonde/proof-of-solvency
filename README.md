@@ -10,8 +10,8 @@ in a way that doesn't compromise the privacy of users.
 
 This scheme is based on the [Proof Of Liabilities][PoL] and [Proof of Assets][PoA] schemes.
 
-[PoL]: https://github.com/olalonde/blind-liability-proof 
-[PoA]: https://github.com/olalonde/bitcoin-asset-proof 
+[PoL]: https://github.com/olalonde/proof-of-liabilities
+[PoA]: https://github.com/olalonde/proof-of-assets
 
 **Table of Contents**
 
@@ -36,7 +36,7 @@ Work in progress.
 ### Liabilites proof
 
 The liabilities proof is done using the scheme described at
-[olalonde/blind-liability-proof](https://github.com/olalonde/blind-liability-proof).
+[olalonde/proof-of-liabilities](https://github.com/olalonde/proof-of-liabilities).
 
 Embedded:
 
@@ -70,7 +70,8 @@ PS: The `x-liabilities-proof-root` **must** be available on the index page (doma
 
 ### Assets proof
 
-The assets proof is done using the scheme described at [olalonde/bitcoin-asset-proof](https://github.com/olalonde/bitcoin-asset-proof).
+The assets proof is done using the scheme described at
+[olalonde/proof-of-assets](https://github.com/olalonde/proof-of-assets).
 
 Embedded:
 
