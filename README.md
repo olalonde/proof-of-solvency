@@ -1,15 +1,39 @@
-# Blind Solvency Proof scheme
 
-This is a scheme that describes how Bitcoin shared wallet operators can prove
-they are solvent in a way that protects the privacy of its users.
-Inspired from gmaxwell's
-["prove-how-(non)-fractional-your-Bitcoin-reserves-are scheme"](https://iwilcox.me.uk/2014/nofrac-orig).
+# Proof of Solvency
 
-Beer fund: **1ECyyu39RtDNAuk3HRCRWwD4syBF2ZGzdx**
+*Proof of Solvency* specification and Javascript implementation.
+
+Proof of Solvency (PoS) is a scheme designed to let users verify the
+solvency of online websites which accept Bitcoin (or other similar
+currency) deposits (e.g. exchange websites, online wallets, gambling websites, etc.)
+in a way that doesn't compromise the privacy of users.
+
+This scheme is based on the [Proof Of Liabilities][PoL] and [Proof of Assets][PoA] schemes.
+
+[PoL]: https://github.com/olalonde/blind-liability-proof 
+[PoA]: https://github.com/olalonde/bitcoin-asset-proof 
+
+**Table of Contents**
+
+- [Specification](#specification)
+  - [Liabilites proof](#liabilites-proof)
+  - [Assets proof](#assets-proof)
+  - [Verification](#verification)
+  - [Known limitations](#known-limitations)
+- [Sites that implement this scheme](#sites-that-implement-this-scheme)
+
+[Proof of Solvency extension](https://github.com/olalonde/solvency-verifier-extension)
 
 ![extension screenshot](https://raw.github.com/olalonde/solvency-verifier-extension/master/docs/screenshot.png)
 
-## Liabilites proof
+**Table of Contents**
+
+
+## Specification
+
+Work in progress.
+
+### Liabilites proof
 
 The liabilities proof is done using the scheme described at
 [olalonde/blind-liability-proof](https://github.com/olalonde/blind-liability-proof).
@@ -44,7 +68,7 @@ PS: The `x-liabilities-proof-root` **must** be available on the index page (doma
 }
 ```
 
-## Assets proof
+### Assets proof
 
 The assets proof is done using the scheme described at [olalonde/bitcoin-asset-proof](https://github.com/olalonde/bitcoin-asset-proof).
 
@@ -66,9 +90,7 @@ Embedded:
 }
 ```
 
-## Solvency proof
-
-[Solvency Verifier](https://github.com/olalonde/solvency-verifier-extension) Chrome Extension
+### Verification
 
 The proof that a site is solvent can be done by adding up all amounts
 controlled by addresses listed in the assets proof and deducting this
@@ -84,11 +106,7 @@ proof must have the same `id` as its matching liabilities proof. This
 allows a shared wallet who handles multiple currencies to have multiple
 solvency proofs.
 
-## Sites that implement this scheme
-
-Send a pull request if you would like your site listed here.
-
-## Known limitations
+### Known limitations
 
 - This scheme warns users when an exchange is insolvent but it does
 not prevent them from running away with the money / getting hacked /
@@ -109,4 +127,8 @@ is not served a custom root. It also relies on a trusted third party
 server to retrieve the balance for a given asset proof. Both those servers
 are relatively easy to host and they could be optionally customized in the
 extension's settings.
+
+## Sites that implement this scheme
+
+Send a pull request if you would like your site listed here.
 
